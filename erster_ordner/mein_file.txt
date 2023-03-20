@@ -1,12 +1,14 @@
-Konsolen Kommandos
+git clone <copy url von github>
 
-```
+git status
 
-ls -l
+git add . 
 
-cd gh_signedav
+git commit -m "das sind die ersten files die für den test relevant sind."
 
-# um im ordner zurückgen
-cd ..
+git diff
 
-```
+git log 
+
+
+https vs ssh
