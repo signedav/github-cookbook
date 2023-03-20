@@ -13,3 +13,5 @@ git log
 git checkout -b daveswork
 
 text blabla
+
+https vs ssh
