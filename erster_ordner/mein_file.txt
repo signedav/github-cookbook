@@ -7,8 +7,4 @@ git add .
 git commit -m "das sind die ersten files die für den test relevant sind."
 
 git diff
-
-git log 
-
-
 https vs ssh
