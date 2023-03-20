@@ -1,0 +1,12 @@
+Konsolen Kommandos
+
+```
+
+ls -l
+
+cd gh_signedav
+
+# um im ordner zurückgen
+cd ..
+
+```
