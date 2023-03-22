@@ -76,11 +76,13 @@ Du hast dort auch einen unsichtbaren Ordner `.git` - der ist aber (noch) nicht r
 
 #### Einrichten deiner SSH Verbindung
 
-## 2. Ändern ein Files
+## 2. Ändern eines Files
 
 Die Files abändern, Ordner hinzufügen und löschen etc. kannst du alles über den Explorer und mit den Tools deiner Wahl machen. Da musst du dich nicht mehr mit der Konsole herumschlagen.
 
-### 3. Änderungen "stagen" und "commiten"
+## 3. Änderungen "stagen" und "commiten"
+
+### Status eines Files
 
 Es gibt drei Status von Dateien:
 1. Lokal gespeichert.
@@ -88,7 +90,6 @@ Es gibt drei Status von Dateien:
 3. Commitet. Bestätigt und Kommentiert, was du geändert hast.
 4. Auf den Server (Github) geladen (gepusht). Das sehen wir im nächsten Schritt.
 
-#### Status anschauen
 Den Status siehst du mit dem Git-Kommando `git status`:
 ```bash
 # Status des lokalen Repositories
@@ -99,7 +100,6 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 ```
-
 
 #### Lokal gespeichert
 Wenn du nun ein File (zBs. README.md) geändert und gespeichert hast, siest du es als lokal gespeichert und abgeändert.
@@ -161,4 +161,6 @@ Changes to be committed:
 	modified:   README.md
 ```
 
-### 4. Änderungen auf das online Repository "pushen"
+#### Committet
+
+## 4. Änderungen auf das online Repository "pushen"
