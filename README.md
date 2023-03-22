@@ -82,4 +82,28 @@ Die Files abändern, Ordner hinzufügen und löschen etc. kannst du alles über 
 
 ### 3. Änderungen "stagen" und "commiten"
 
+Es gibt drei Status von Dateien:
+1. Lokal gespeichert.
+2. Staged. Quasi "bereit gelegt".
+3. Commitet. Bestätigt und Kommentiert, was du geändert hast.
+4. Auf den Server (Github) geladen (gepusht). Das sehen wir im nächsten Schritt.
+
+#### Status anschauen
+Den Status siehst du mit dem Git-Kommando `git status`:
+```bash
+# Status des lokalen Repositories
+dave@windows ~/Documents/github_repos
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+#### Lokal gespeichert
+Wenn du nun ein File geändert und gespeichert hast, siest du es als lokal gespeichert und abgeändert.
+
+
+
+
 ### 4. Änderungen auf das online Repository "pushen"
