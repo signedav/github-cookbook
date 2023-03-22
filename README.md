@@ -100,10 +100,65 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
+
 #### Lokal gespeichert
-Wenn du nun ein File geändert und gespeichert hast, siest du es als lokal gespeichert und abgeändert.
+Wenn du nun ein File (zBs. README.md) geändert und gespeichert hast, siest du es als lokal gespeichert und abgeändert.
+```bash
+# Status des lokalen Repositories
+dave@windows ~/Documents/github_repos
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
 
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+Dort siehst du `modified:   README.md`
 
+#### Staged
+Um es nun bereit zu legen, um die Änderung zu bestätigen musst du es "stagen". 
+
+Doch vorher möchtest du vielleicht überprüfen, was sich überhaupt geändert hat. Dies machst du mit dem Git-Kommando `git diff`.
+```bash
+# Änderungen eines Files seit dem letzten "commit"
+dave@windows ~/Documents/github_repos
+$ git diff
+diff --git a/README.md b/README.md
+index 5e0fb03..a12f268 100644
+--- a/README.md
++++ b/README.md
+@@ -101,8 +101,7 @@ nothing to commit, working tree clean
+ 
+-Wenn du nun ein File geändert und gespeichert hast, siest du es als lokal gespeichert und abgeändert.
+-
++Wenn du jetzt ein File geändert und gespeichert hast und es ist so wie du es möchtest.
+```
+
+Wenn es gut ist, kannst du es nun "bereit legen" mit dem Git-Kommando `git add <dateiname>` oder um alle Files zu "stagen" `git add .`
+
+```bash
+# Stagen eines Files
+dave@windows ~/Documents/github_repos
+$ git add README.md
+```
+
+Der Status sieht jetzt so aus:
+
+```bash
+# Status des lokalen Repositories
+dave@windows ~/Documents/github_repos
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+```
 
 ### 4. Änderungen auf das online Repository "pushen"
