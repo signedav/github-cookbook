@@ -70,11 +70,27 @@ drwxrwxr-x 2 dave dave 4096 Mär 22 11:47 erster_ordner
 
 Du hast dort auch einen unsichtbaren Ordner `.git` - der ist aber (noch) nicht relevant hier.
 
-### Benutze SSH und nicht HTTPS wenn du lesen möchtest
+### Benutze HTTPS und nicht SSH wenn du lesen möchtest
 
 > Für lesenden Zugriff reicht eine HTTPS-URL, jedoch wird ein SSH-Key zum Schreiben auf GitHub-Repositories benötigt. Denn die Authentifizierung von Nutzerinnen und Nutzern per Username/Password wird auf GitHub seit August 2021 nicht mehr unterstützt.
 
 #### Einrichten deiner SSH Verbindung
+
+##### 1. Erstelle die Keys lokal im Terminal
+```
+ssh-keygen -t ed25519 -C "sidhochwind@gmail.com"
+```
+
+##### 2. Kopiere Inhalt des Public Keys
+```
+cat /data/data/com.termux/files/home/.ssh/id_ed25519.pub
+```
+
+##### 3. Füge es auf github.com ein
+
+![Screenshot_20241201-112207_1](https://github.com/user-attachments/assets/577e0d1f-6515-4f5c-8a9a-a4edf1e0c748)
+
+![Screenshot_20241201-112227_1](https://github.com/user-attachments/assets/43fa96b9-2e24-401e-acff-8f36723f1746)
 
 ## 2. Ändern eines Files
 
